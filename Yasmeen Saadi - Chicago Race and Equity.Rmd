@@ -102,13 +102,19 @@ data <- data |>
   #Fix Asian data
   
   mutate(asian = (as.numeric(asian)),
-    asian_pct = asian/total,
-         black_pct = black/total,
-         latinx_pct = latinx/total,
-         white_pct = white/total,
-         other_pct = other/total)
+    asian_pct = (asian/total)*100,
+         black_pct = (black/total)*100,
+         latinx_pct = (latinx/total)*100,
+         white_pct = (white/total)*100,
+         other_pct = (other/total)*100)
 
 ```
+```{r}
+black <- data %>% 
+  select(degree_name, details, black, latinx, black_pct, latinx_pct) %>% 
+  arrange(desc (latinx_pct))
+```
+
 
 
 
