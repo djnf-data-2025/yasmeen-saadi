@@ -43,10 +43,13 @@ Clean up data
 
 # Load software libraries
 ```{r}
-#install.packages("tidyverse")
-#install.packages("janitor")
-#install.packages("readxl")
-#install.packages("rvest")
+install.packages("tidyverse")
+install.packages("janitor")
+install.packages("readxl")
+install.packages("rvest")
+```
+
+```{r}
 library(tidyverse)
 library(janitor)
 library(readxl)
@@ -68,7 +71,7 @@ library(rvest)
 # data <- read_excel("../data/2024-12-Revenue.xlsx", skip=2) |> 
 #     clean_names()
 
-data <- read.csv("../data/degree_by_race_ethnicity.csv") |> 
+degree_by_ethnicity <- read.csv("./data/degree_by_race_ethnicity.csv") |> 
     clean_names()
 
 
@@ -92,6 +95,7 @@ glimpse(data)
 # Percent of whole by race
 
 ```{r}
+
 data <- data |> 
   #Fix Asian data
   
