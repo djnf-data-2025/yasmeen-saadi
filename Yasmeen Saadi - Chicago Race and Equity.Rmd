@@ -4,6 +4,8 @@ output: html_document
 date: "2025-05-01"
 ---
 
+Push test
+
 A demo notebook for Dow Jones News Fund data interns
 
 During the week’s training, you will work on a project called Investigate Your Community to produce detailed story pitches relevant to their summer internship positions. The goal is to have the students research a topic relevant to your newsroom so they can get to work immediately at the internship. 
