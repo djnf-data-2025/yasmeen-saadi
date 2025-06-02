@@ -1,0 +1,64 @@
+Award College,Academic Year,Degree Name,Asian,Black,Latinx,White,Other,Grand Total
+WR,2022-2023,AA - Associate of Arts,18,32,232,72,17,371
+WR,2022-2023,AA - Associate of Engineering Science,10,2,20,16,1,49
+WR,2022-2023,AA - Associate of Fine Arts,0,0,5,1,0,6
+WR,2022-2023,AA - Associate of General Studies,18,9,78,17,4,126
+WR,2022-2023,AA - Associate of Science,11,11,74,42,7,145
+WR,2022-2023,AAS - Associate of Applied Science,7,15,43,21,2,88
+WR,2022-2023,AC - Advanced Certificate,1,4,9,6,1,21
+WR,2022-2023,BC - Basic Certificate,2,26,85,23,7,143
+WR,2022-2023,GECC - General Education Core Curriculum,19,24,207,74,12,336
+WR,2022-2023,Grand Total,86,123,753,272,51,1285
+TR,2022-2023,AA - Associate of Arts,23,24,46,14,3,110
+TR,2022-2023,AA - Associate of Engineering Science,0,1,1,2,0,4
+TR,2022-2023,AA - Associate of Fine Arts,0,0,0,1,0,1
+TR,2022-2023,AA - Associate of General Studies,6,15,10,5,1,37
+TR,2022-2023,AA - Associate of Science,19,23,28,10,0,80
+TR,2022-2023,AAS - Associate of Applied Science,5,4,21,2,0,32
+TR,2022-2023,AC - Advanced Certificate,6,26,46,6,2,86
+TR,2022-2023,BC - Basic Certificate,14,30,85,28,1,158
+TR,2022-2023,GECC - General Education Core Curriculum,22,27,41,15,4,109
+TR,2022-2023,Grand Total,95,150,278,83,11,617
+OH,2022-2023,AA - Associate of Arts,0,54,7,1,2,64
+OH,2022-2023,AA - Associate of General Studies,23,4,1,1,1,29
+OH,2022-2023,AA - Associate of Science,2,18,5,1,2,28
+OH,2022-2023,AAS - Associate of Applied Science,0,11,3,0,1,15
+OH,2022-2023,AC - Advanced Certificate,1,17,10,2,0,30
+OH,2022-2023,BC - Basic Certificate,1,209,65,11,13,299
+OH,2022-2023,GECC - General Education Core Curriculum,0,36,10,2,2,50
+OH,2022-2023,Grand Total,4,368,104,18,21,515
+MX,2022-2023,AA - Associate of Arts,1,40,56,5,3,105
+MX,2022-2023,AA - Associate of General Studies,5,42,92,10,6,155
+MX,2022-2023,AA - Associate of Science,3,44,61,2,2,112
+MX,2022-2023,AAS - Associate of Applied Science,30,110,114,66,6,326
+MX,2022-2023,AC - Advanced Certificate,5,51,103,14,4,177
+MX,2022-2023,BC - Basic Certificate,30,217,367,76,16,706
+MX,2022-2023,GECC - General Education Core Curriculum,2,40,64,6,6,118
+MX,2022-2023,Grand Total,76,544,857,179,43,1699
+KK,2022-2023,AA - Associate of Arts,0,61,9,0,2,72
+KK,2022-2023,AA - Associate of General Studies,0,18,4,1,2,25
+KK,2022-2023,AA - Associate of Science,0,13,4,1,1,19
+KK,2022-2023,AAS - Associate of Applied Science,1,37,23,5,3,69
+KK,2022-2023,AC - Advanced Certificate,1,42,48,18,5,114
+KK,2022-2023,BC - Basic Certificate,4,118,74,6,10,212
+KK,2022-2023,GECC - General Education Core Curriculum,0,35,7,1,0,43
+KK,2022-2023,Grand Total,6,324,169,31,24,554
+HW,2022-2023,AA - Associate of Arts,42,153,350,91,25,661
+HW,2022-2023,AA - Associate of Engineering Science,1,0,3,1,0,5
+HW,2022-2023,AA - Associate of Fine Arts,0,1,10,2,2,15
+HW,2022-2023,AA - Associate of General Studies,17,37,48,14,6,122
+HW,2022-2023,AA - Associate of Science,23,33,78,27,6,167
+HW,2022-2023,AAS - Associate of Applied Science,8,11,15,11,1,46
+HW,2022-2023,AC - Advanced Certificate,5,13,16,4,0,38
+HW,2022-2023,BC - Basic Certificate,17,58,99,34,9,217
+HW,2022-2023,GECC - General Education Core Curriculum,23,96,240,52,11,422
+HW,2022-2023,Grand Total,136,402,859,236,60,1693
+DA,2022-2023,AA - Associate of Arts,19,101,8,4,0,132
+DA,2022-2023,AA - Associate of Engineering Science,1,1,6,0,0,8
+DA,2022-2023,AA - Associate of General Studies,1,11,32,3,2,49
+DA,2022-2023,AA - Associate of Science,1,11,74,6,0,92
+DA,2022-2023,AAS - Associate of Applied Science,1,6,24,6,0,37
+DA,2022-2023,AC - Advanced Certificate,9,27,82,121,6,245
+DA,2022-2023,BC - Basic Certificate,11,105,265,236,20,637
+DA,2022-2023,GECC - General Education Core Curriculum,1,35,112,8,3,159
+DA,2022-2023,Grand Total,25,215,696,388,35,1359
