@@ -1,0 +1,42 @@
+---
+title: "Story Pitch — Yasmeen Saadi, 913-208-6316"
+output: html_document
+date: "2025-06-02"
+---
+Using data from the City Colleges of Chicago (CCC) system, I would like to look into how community college enrollment by race/ethnicity has changed over the past 10 years in the city. This could help understand how the accessibility of the colleges for students of color in the area has developed.
+
+Especially as DEI initiatives and grants for students of color are being threatened, it is timely to take a closer look at the institutions that serve as a more affordable option and if they are truly serving the students who need them.
+
+Community colleges are especially important for low-income students and those seeking a more affordable way to complete their degrees. In each of CCC's seven colleges, students of color make up over 60% of the student enrollment. By compiling the data from the past 10 years, we can see if the percentages of Black and Latinx students have always been high or if they have increased over the years. The Investigative Project on Race and Equity was originally interested in looking at acceptances and rejections across zip codes. However, all seven colleges are open enrollment, meaning anyone who applies is awarded admission.
+
+Just by looking at the statistical digests from FY 2017 and FY 2023, over the six years, the enrollment numbers for Black students has decreased slightly, while the numbers for Latinx students have increased. In the 2022-23 academic year, which is the most recent year available, 7,722 students enrolled in a degree program. Of those, 27.5% were Black and 48.1% were Latinx. In 2017, the degree enrollment was similar at 7,224 students. However, 33.4% were Black and 37.7% were Latinx. I could continue making these comparisons to see if this has been a steady trend.
+
+CCC was founded in 1911. For a more personal angle, we could try to find older POC alumni who attended the colleges years ago to compare to the experiences of students of color now. Students who have attended CCC would care about the article, especially if they have feelings on the cultural/racial representation within the colleges. We could do this by searching for relevant Facebook groups or directories.
+
+##Records/data 
+
+City Colleges of Chicago includes a statistical digest in its budget each fiscal year which includes numbers on enrollment by degree area and ethnicity. The only issue is that there are many other students who take courses through the community colleges who are not on a degree-seeking course, who I do not believe are represented in this data.
+
+I plan to go through the budget documents to see if there is more comprehensive enrollment data for non-degree-seeking students.
+
+College Scorecard also provides snapshots on each community college, including graduation rate, annual costs and median household income, which can provide good context.
+
+##People I can interview 
+
+- Lorenzo Baber is the director of UIUC's Office of Community College Research and Leadership. He or someone on the research team could provide insight on persisting equity issues within community colleges.
+
+- In April, Chicago Public Schools, CCC and the University of Illinois Chicago launched “Chicago Roadmap 2.0,” which will try to create a pipeline for students seeking higher education. The website does not include the directors of the project, but I could reach out to the general email to have someone on the project speak about the local need for students in the city.
+
+- Young and old alumni of the colleges who are people of color could show the range of student experiences.
+
+##Visuals
+
+One graphic idea is a demographic map of Chicago with pinpoints for each of the seven community colleges.
+
+Another graphic idea is a bar graph where you could scroll throughout the years and look at the enrollment by ethnicity for Black and Latinx students for the last 10 years.
+
+If it would be possible to find real people who had gone through a City of Columbia College years ago, it would be cool to have photos of them in college and them now.
+
+##Realistic deadline 
+
+I would likely need two weeks to finish this project in order to analyze my code and have enough time to schedule/conduct interviews.

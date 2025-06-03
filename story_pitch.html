@@ -10,9 +10,9 @@
 
 
 
-<meta name="date" content="2025-05-01" />
+<meta name="date" content="2025-06-02" />
 
-<title>Yasmeen Saadi</title>
+<title>Story Pitch — Yasmeen Saadi, 913-208-6316</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -349,180 +349,75 @@ display: none;
 
 
 
-<h1 class="title toc-ignore">Yasmeen Saadi</h1>
-<h4 class="date">2025-05-01</h4>
+<h1 class="title toc-ignore">Story Pitch — Yasmeen Saadi,
+913-208-6316</h1>
+<h4 class="date">2025-06-02</h4>
 
 </div>
 
 
-<p>Push test</p>
-<p>A demo notebook for Dow Jones News Fund data interns</p>
-<p>During the week’s training, you will work on a project called
-Investigate Your Community to produce detailed story pitches relevant to
-their summer internship positions. The goal is to have the students
-research a topic relevant to your newsroom so they can get to work
-immediately at the internship.</p>
-<p>Here are some examples from last year’s DJNF data journalism
-training:</p>
-<p>Hannah Rosenberger, at ASI Media/Counselor magazine, produced this
-analysis on name, image and likeness trends: <a href="https://hrosenberger.github.io/ASI-NIL-Project/" class="uri">https://hrosenberger.github.io/ASI-NIL-Project/</a></p>
-<p>Shifra Dayak, an intern at the Connecticut Mirror, produced this
-analysis of environment spill data: <a href="https://shifradayak.github.io/DJNF_Merrill/ct_env_spills.html" class="uri">https://shifradayak.github.io/DJNF_Merrill/ct_env_spills.html</a>.</p>
-<p>Michael Zhang, an intern at the Houston Landing, explored local
-election data: <a href="https://michaelzhangreporter.github.io/Houston_Campaign_Finance/" class="uri">https://michaelzhangreporter.github.io/Houston_Campaign_Finance/</a></p>
-<p>Here’s what your newsroom suggested for a project My name is Marissa
-Evans. I’m the investigations editor with the Investigative Project on
-Race and Equity. We are very excited to have Yasmeen join us this summer
-at IPRE and hope to help her achieve her goals and report the best
-stories possible.</p>
-<p>Here are some potential ideas we’d like Yasmeen to consider during
-the training. We are excited to see what she might come up with and are
-of course open to ideas she has coming into the training that she is
-interested in pursuing. We are interested in ideas related to education
-(K-12, higher education, trade schools, etc.), housing, healthcare,
-income inequality, Chicago/Illinois demographic changes and immigration
-as these are subject matters we’re eager to develop coverage
-opportunities for in the future. COMMUNITY COLLEGE TRANSFER CREDITS: We
-read this Education Writers Association post on community college credit
-mobility with great interest: <a href="https://ewa.org/how-to-cover-the-story/what-is-credit-mobility-and-how-does-it-affect-college-students" class="uri">https://ewa.org/how-to-cover-the-story/what-is-credit-mobility-and-how-does-it-affect-college-students</a>
-We think there’s a great potential story here looking at this issue from
-a racial equity standpoint using public records/data from the City
-Colleges of Chicago system on how often people of color in community
-colleges are able to successfully use transfer credits to further their
-education and the institutions that are willing to take them. CHICAGO
-COMMUNITY COLLEGE ADMISSIONS: We’d like Yasmeen to look into City
-Colleges of Chicago admissions (acceptance and rejection) by race and
-zip code to see how this has changed over time. CPS BUS ROUTES: We also
-read an Education Writers Association post about covering present day
-school segregation: <a href="https://ewa.org/educated-reporter/how-school-choice-contributes-to-segregation-in-schools" class="uri">https://ewa.org/educated-reporter/how-school-choice-contributes-to-segregation-in-schools</a>
-One of the items that stood out is how often school bus routes and
-transportation issues may inadvertently create segregation issues.
-There’s been ongoing coverage among local newsrooms about Chicago Public
-Schools’ ongoing bus driver shortage and how transportation for kids is
-not always guaranteed. However, we are curious about a potential story
-looking into how CPS bus routes have changed over the years and how
-these route changes may be impacting children of color. We’re also
-curious about a few other things: what is the average wait time for
-school buses for CPS kids, how late are the buses and which routes have
-notoriously late ones, on cold winter days how much longer are kids
-waiting to be picked up for school / get home, how many kids have missed
-large chunks of time at school because the bus was late, etc. We predict
-our local newsroom competitors will cover the driver shortage and bus
-availability again for their back to school coverage in the late summer
-/ early fall but we would like to see if there’s a way to elevate the
-coverage to consider the broader systemic, institutional and structural
-issues that come with getting Chicago kids to school and back home on
-time.</p>
-<p>CHICAGO WEALTH GAPS: We’re interested in a potential story looking at
-how racial wealth gaps across Chicago neighborhoods have changed over
-time. Thanks so much. Please let me know if you or Yasmeen have any
-questions.</p>
-<p>This notebook helps you get started.</p>
-<p>First option to extract the data: Open Adobe Acrobat Pro (the paid
-version, part of the Creative Cloud) Select a specific page with a table
-you want (I used p 257) “Scan &amp; OCR” to Extract Text Highlight the
-table, left click, export to Excel. Clean up data</p>
-<div id="load-software-libraries" class="section level1">
-<h1>Load software libraries</h1>
-<pre class="r"><code>#install.packages(&quot;tidyverse&quot;)
-#install.packages(&quot;janitor&quot;)
-#install.packages(&quot;readxl&quot;)
-#install.packages(&quot;rvest&quot;)</code></pre>
-<pre class="r"><code>library(tidyverse)</code></pre>
-<pre><code>## ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-## ✔ dplyr     1.1.4     ✔ readr     2.1.5
-## ✔ forcats   1.0.0     ✔ stringr   1.5.1
-## ✔ ggplot2   3.5.2     ✔ tibble    3.2.1
-## ✔ lubridate 1.9.4     ✔ tidyr     1.3.1
-## ✔ purrr     1.0.4     
-## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-## ✖ dplyr::filter() masks stats::filter()
-## ✖ dplyr::lag()    masks stats::lag()
-## ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
-<pre class="r"><code>library(janitor)</code></pre>
-<pre><code>## 
-## Attaching package: &#39;janitor&#39;
-## 
-## The following objects are masked from &#39;package:stats&#39;:
-## 
-##     chisq.test, fisher.test</code></pre>
-<pre class="r"><code>library(readxl)
-library(rvest)</code></pre>
-<pre><code>## 
-## Attaching package: &#39;rvest&#39;
-## 
-## The following object is masked from &#39;package:readr&#39;:
-## 
-##     guess_encoding</code></pre>
-</div>
-<div id="load-your-data" class="section level1">
-<h1>Load your data</h1>
-<p>2024</p>
-<pre class="r"><code># 
-# YOUR_DATA &lt;- read.csv(&quot;../data/XXXXX.csv&quot;) |&gt; 
-#     clean_names()
-
-# data &lt;- read_excel(&quot;../data/2024-12-Revenue.xlsx&quot;, skip=2) |&gt; 
-#     clean_names()
-
-degree_by_ethnicity &lt;- read.csv(&quot;./data/degree_by_race_ethnicity.csv&quot;) |&gt; 
-    clean_names()</code></pre>
-<p>Data details:</p>
-</div>
-<div id="explore-the-data-types" class="section level1">
-<h1>Explore the data types</h1>
-<pre class="r"><code>#glimpse(YOUR_DATA)
-
-glimpse(data)</code></pre>
-<pre><code>## function (..., list = character(), package = NULL, lib.loc = NULL, verbose = getOption(&quot;verbose&quot;), 
-##     envir = .GlobalEnv, overwrite = TRUE)</code></pre>
-</div>
-<div id="percent-of-whole-by-race" class="section level1">
-<h1>Percent of whole by race</h1>
-<pre class="r"><code># 
-# data &lt;- data |&gt; 
-#   #Fix Asian data
-#   
-#   mutate(asian = (as.numeric(asian)),
-#     asian_pct = (asian/total)*100,
-#          black_pct = (black/total)*100,
-#          latinx_pct = (latinx/total)*100,
-#          white_pct = (white/total)*100,
-#          other_pct = (other/total)*100)</code></pre>
-<pre class="r"><code># black &lt;- data %&gt;% 
-#   select(degree_name, details, black, latinx, black_pct, latinx_pct) %&gt;% 
-#   arrange(desc (latinx_pct))</code></pre>
-</div>
-<div id="code-for-later-fix-dates" class="section level1">
-<h1>Code for later — Fix dates</h1>
-<pre class="r"><code># data &lt;- data |&gt; 
-#   mutate(date = lubridate::mdy(contribution_date))</code></pre>
-</div>
-<div id="code-for-later-data-exploration-dates" class="section level1">
-<h1>Code for later — Data exploration: dates</h1>
-<pre class="r"><code># data |&gt; 
-#    count(date) |&gt; 
-#   arrange(desc(n))</code></pre>
-</div>
-<div id="questions" class="section level1">
-<h1>Questions</h1>
-<p>Write down questions you want answered:</p>
-</div>
-<div id="data-details" class="section level1">
-<h1>Data Details</h1>
-<p><a href="https://www.ccc.edu/menu/facts-and-statistics/" class="uri">https://www.ccc.edu/menu/facts-and-statistics/</a></p>
-<p>I would call the city Colleges people and say you want the data files
-that underly this report. And ask for prior years, too:</p>
-<p><a href="https://www.ccc.edu/wp-content/uploads/CCC-FY23-Statistical-Digest-As-of-March-7-2024.pdf" class="uri">https://www.ccc.edu/wp-content/uploads/CCC-FY23-Statistical-Digest-As-of-March-7-2024.pdf</a></p>
-<p>Second option for extraction:</p>
-<p>First, download Tabula, a tool to extract data from PDFs <a href="https://tabula.technology/" class="uri">https://tabula.technology/</a></p>
-<ol style="list-style-type: decimal">
-<li>Install Tabula and launch it</li>
-<li>Download this PDF to your laptop: <a href="https://www.ccc.edu/wp-content/uploads/CCC-FY23-Statistical-Digest-As-of-March-7-2024.pdf" class="uri">https://www.ccc.edu/wp-content/uploads/CCC-FY23-Statistical-Digest-As-of-March-7-2024.pdf</a></li>
-<li>I extracted “Degrees by Certificate, Ethnicity” on page 257. Look at
-the rest and extract other relevant tables later. <a href="https://www.youtube.com/watch?v=IEusn9HB1sc" class="uri">https://www.youtube.com/watch?v=IEusn9HB1sc</a></li>
-</ol>
-</div>
+<p>Using data from the City Colleges of Chicago (CCC) system, I would
+like to look into how community college enrollment by race/ethnicity has
+changed over the past 10 years in the city. This could help understand
+how the accessibility of the colleges for students of color in the area
+has developed.</p>
+<p>Especially as DEI initiatives and grants for students of color are
+being threatened, it is timely to take a closer look at the institutions
+that serve as a more affordable option and if they are truly serving the
+students who need them.</p>
+<p>Community colleges are especially important for low-income students,
+especially those seeking a more affordable way to complete their
+degrees. In each of CCC’s seven colleges, students of color make up over
+60% of the student enrollment. By compiling the data from the past 10
+years, we can see if the percentages of Black and Latinx students have
+always been high or if they have increased over the years. The
+Investigative Project on Race and Equity was originally interested in
+looking at acceptances and rejections across zip codes. However, all
+seven colleges are open enrollment, meaning anyone who applies is
+awarded admission.</p>
+<p>Just by looking at the statistical digest from</p>
+<p>In the 2022-23 academic year, which is the most recent year
+available, 7,722 students enrolled in a degree program. Of those, 27.5%
+were Black and 48.1% were Latinx.</p>
+<p>CCC was founded in 1911. For a more personal angle, we could try to
+find older POC alumni who attended the colleges years ago to compare to
+the experiences of students of color now.</p>
+<p>A possible news peg is that in April, Chicago Public Schools, CCC and
+the University of Illinois Chicago launched “Chicago Roadmap 2.0,” which
+will try to ensure credits are transferred smoothly from CCC to UIC.
+This follows a partnership between CCC and UIC established in 2024. If
+there is data out yet for the 2024-25 school year, it would be
+interesting to see if the increased Early College enrollment shown by
+Chicago Public Schools students has resulted in increased successful
+transfer students from CCC to UIC, and how this differs by
+race/ethnicity.</p>
+<p>To develop the story and add a personal</p>
+<p>subtitle(“why we should care”)</p>
+<p>##Records/data City Colleges of Chicago includes a statistical digest
+in its budget each fiscal year which includes numbers on enrollment by
+degree area and ethnicity. The only issue is that there are many other
+students who take courses through the community colleges who are not on
+a degree-seeking course, who I do not believe are represented in this
+data.</p>
+<p>I plan to go through the budget documents to see if there is more
+comprehensive enrollment data for non-degree-seeking students.</p>
+<p>College Scorecard also provides snapshots on each community college,
+including graduation rate, annual costs and median household income,
+which can provide good context.</p>
+<p>##People I can interview Lorenzo Baber is the director of UIUC’s
+Office of Community College Research and Leadership. He or someone on
+the research team could provide insight on persisting equity issues
+within community colleges.</p>
+<p>##Visuals</p>
+<p>One graphic idea is a demographic map of Chicago with pinpoints for
+each of the seven community colleges.</p>
+<p>Another graphic idea</p>
+<p>If it would be possible to find real people who had gone through a
+City of Columbia College years ago, it would be cool to have photos of
+them in college and them now.</p>
+<p>##Realistic deadline I would likely need two weeks to finish this
+project in order to analyze my code and have enough time to
+schedule/conduct interviews.</p>
 
 
 
