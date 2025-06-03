@@ -3,6 +3,10 @@ title: "Story Pitch — Yasmeen Saadi, 913-208-6316"
 output: html_document
 date: "2025-06-02"
 ---
+#rsw comments below -
+Yasmeen - This is a very thoughtful proposal with a lot of detail. You have focused it well and spelled out a good plan. The next steps will be to build on this by adding the code to illustrate and expand on the points here. See my examples below. Today we're focused on data visualizations, so you'll be able to add those here.
+
+
 Using data from the City Colleges of Chicago (CCC) system, I would like to look into how community college enrollment by race/ethnicity has changed over the past 10 years in the city. This could help understand how the accessibility of the colleges for students of color in the area has developed.
 
 Especially as DEI initiatives and grants for students of color are being threatened, it is timely to take a closer look at the institutions that serve as a more affordable option and if they are truly serving the students who need them.
@@ -10,16 +14,21 @@ Especially as DEI initiatives and grants for students of color are being threate
 Community colleges are especially important for low-income students and those seeking a more affordable way to complete their degrees. In each of CCC's seven colleges, students of color make up over 60% of the student enrollment. By compiling the data from the past 10 years, we can see if the percentages of Black and Latinx students have always been high or if they have increased over the years. The Investigative Project on Race and Equity was originally interested in looking at acceptances and rejections across zip codes. However, all seven colleges are open enrollment, meaning anyone who applies is awarded admission.
 
 Just by looking at the statistical digests from FY 2017 and FY 2023, over the six years, the enrollment numbers for Black students has decreased slightly, while the numbers for Latinx students have increased. In the 2022-23 academic year, which is the most recent year available, 7,722 students enrolled in a degree program. Of those, 27.5% were Black and 48.1% were Latinx. In 2017, the degree enrollment was similar at 7,224 students. However, 33.4% were Black and 37.7% were Latinx. I could continue making these comparisons to see if this has been a steady trend.
+#rsw comment - Great - let's make a chart from this data. Today you will be learning data visualizations - perfect!
 
 CCC was founded in 1911. For a more personal angle, we could try to find older POC alumni who attended the colleges years ago to compare to the experiences of students of color now. Students who have attended CCC would care about the article, especially if they have feelings on the cultural/racial representation within the colleges. We could do this by searching for relevant Facebook groups or directories.
+#rsw comment - great idea to contact the alumni networks
 
 ##Records/data 
 
 City Colleges of Chicago includes a statistical digest in its budget each fiscal year which includes numbers on enrollment by degree area and ethnicity. The only issue is that there are many other students who take courses through the community colleges who are not on a degree-seeking course, who I do not believe are represented in this data.
+#rsw comment - good point. back in the day, i took a few community college classes but they were not for a degree. contact the colleges to see how you can fill this gap, if at all
 
 I plan to go through the budget documents to see if there is more comprehensive enrollment data for non-degree-seeking students.
 
 College Scorecard also provides snapshots on each community college, including graduation rate, annual costs and median household income, which can provide good context.
+
+#rsw comment - the college scorecards can be simple profile graphics for each of the schools. it would be worth checking if income changes over time
 
 ##People I can interview 
 
@@ -31,12 +40,65 @@ College Scorecard also provides snapshots on each community college, including g
 
 ##Visuals
 
+#rsw comment: great ideas
+
 One graphic idea is a demographic map of Chicago with pinpoints for each of the seven community colleges.
 
 Another graphic idea is a bar graph where you could scroll throughout the years and look at the enrollment by ethnicity for Black and Latinx students for the last 10 years.
 
 If it would be possible to find real people who had gone through a City of Columbia College years ago, it would be cool to have photos of them in college and them now.
+#rsw comment - yearbooks, if available, would be a good source
 
 ##Realistic deadline 
 
 I would likely need two weeks to finish this project in order to analyze my code and have enough time to schedule/conduct interviews.
+
+
+#rsw comment - add your data and discuss it as part of the narrative
+
+
+# Load software libraries
+```{r}
+#install.packages("tidyverse")
+#install.packages("janitor")
+#install.packages("readxl")
+#install.packages("rvest")
+```
+
+### Load libraries
+```{r}
+library(tidyverse)
+library(janitor)
+library(readxl)
+library(rvest)
+
+```
+
+
+# Load your data
+
+
+```{r}
+degree_by_ethnicity <- read.csv("./data/degree_by_race_ethnicity.csv") |> 
+    clean_names()
+
+```
+
+Data details:
+
+# Percent of whole by race
+
+```{r}
+# 
+data <- data |>
+  mutate(asian = (as.numeric(asian)),
+    asian_pct = (asian/total)*100,
+         black_pct = (black/total)*100,
+         latinx_pct = (latinx/total)*100,
+         white_pct = (white/total)*100,
+         other_pct = (other/total)*100)
+```
+
+
+#rsw comment - add percent of whokle graphic here... etc.
+
