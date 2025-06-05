@@ -1,49 +1,59 @@
 ---
-title: "Yasmeen Saadi"
+title: "How City Colleges of Chicago fall enrollment has changed since 2000 — Yasmeen Saadi"
 output: html_document
-date: "2025-05-01"
+date: "2025-06-04"
 ---
 
-Push test
+<iframe title="City Colleges of Chicago" aria-label="Locator map" id="datawrapper-chart-3LN2l" src="https://datawrapper.dwcdn.net/3LN2l/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="563" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}}))}();
+</script>
 
-A demo notebook for Dow Jones News Fund data interns
+In the late 1900s, Black enrollment at the City Colleges of Chicago was substantially higher than any other group of race/ethnicity, according to data from the Illinois Community College Board. By the 2000s, enrollment numbers between Black and Hispanic students started to even out.
 
-During the week’s training, you will work on a project called Investigate Your Community to produce detailed story pitches relevant to their summer internship positions. The goal is to have the students research a topic relevant to your newsroom so they can get to work immediately at the internship. 
+However — excluding a recent rise after the COVID-19 pandemic — in the past 15 years, enrollment for Black students has steadily decreased as Hispanic enrollment has stayed relatively steady. This has resulted in a student body with a heavier Hispanic/Latinx presence.
 
-Here are some examples from last year’s DJNF data journalism training:
+Using data from the City Colleges of Chicago (CCC) system, I looked into how community college enrollment by race/ethnicity has changed over the past 20 years in the city. This data, along with interviews and historical context, can help us understand how the accessibility/use of these colleges for students of color in the area has developed.
 
-Hannah Rosenberger, at ASI Media/Counselor magazine, produced this analysis on name, image and likeness trends: https://hrosenberger.github.io/ASI-NIL-Project/
+Especially as DEI initiatives and grants for students of color are being threatened, it is timely to take a closer look at the institutions that serve as a more affordable option and if they are truly serving the students who need them. We can also compare CCC's growth with the population growth of the city to see if the two align. If not, we would need to dig in to learn how come.
 
-Shifra Dayak, an intern at the Connecticut Mirror, produced this analysis of environment spill data: https://shifradayak.github.io/DJNF_Merrill/ct_env_spills.html.
+Community colleges are especially important for low-income students and those seeking a more affordable way to complete their degrees. In each of CCC's seven colleges, students of color make up over 60% of the student enrollment. By compiling the data from the past 10 years, we can see if the percentages of Black and Latinx students have always been high or if they have increased over the years. The Investigative Project on Race and Equity was originally interested in looking at acceptances and rejections across zip codes. However, all seven colleges are open enrollment, meaning anyone who applies is awarded admission.
 
-Michael Zhang, an intern at the Houston Landing, explored local election data: https://michaelzhangreporter.github.io/Houston_Campaign_Finance/
+<iframe title="Black student enrollment in City Colleges of Chicago drops as Latinx student enrollment stays steady" aria-label="Interactive line chart" id="datawrapper-chart-iHTUw" src="https://datawrapper.dwcdn.net/iHTUw/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}}))}();
+</script>
+
+Just by looking at the statistical digests from FY 2017 and FY 2023, over the six years, the enrollment numbers for Black students has decreased slightly, while the numbers for Latinx students have increased. In the 2022-23 academic year, which is the most recent year available, 7,722 students enrolled in a degree program. Of those, 27.5% were Black and 48.1% were Latinx. In 2017, the degree enrollment was similar at 7,224 students. However, 33.4% were Black and 37.7% were Latinx. I could continue making these comparisons to see if this has been a steady trend.
+
+Because CCC has a long history, for a more personal angle, we could try to find older POC alumni who attended the colleges years ago to compare to the experiences of students of color now. Students who have attended CCC would care about the article, especially if they have feelings on the cultural/racial representation within the colleges. We could do this by searching for relevant Facebook groups or directories.
+
+## Records/data 
+
+The Illinois Community College Board has data on fall enrollment available dating back to 1983. I compiled enrollment data by ethnicity from 2000 to 2024 to better understand how enrollment has changed.
+
+This data was much more comprehensive than the data provided in City Colleges of Chicago's statistical digests. It included students who were not seeking degrees, which the statistical digests did not. However, my findings on the decline in Black enrollment and steadiness of Latinx enrollment were the same for both.
+
+College Scorecard also provides snapshots on each community college, including graduation rate, annual costs and median household income, which is good context. I used this in my first graphic to provide general overviews of each college.
+
+## People I can interview 
+
+- Lorenzo Baber is the director of UIUC's Office of Community College Research and Leadership. He or someone on the research team could provide insight on persisting equity issues within community colleges.
+
+- In April, Chicago Public Schools, CCC and the University of Illinois Chicago launched “Chicago Roadmap 2.0,” which will try to create a pipeline for students seeking higher education. The website does not include the directors of the project, but I could reach out to the general email to have someone on the project speak about the local need for students in the city.
+
+- A researcher/historian at the Abakanowicz Research Center within the Chicago History Museum could provide context on the demographic development of the city and the rise in Latinx population.
+
+- Young and old alumni of the colleges who are people of color could show the range of student experiences.
+
+## Other visuals
+
+I would like to insert a chloropleth map of the Hispanic population of Chicago in 2020, 2010 and 2000. I am just not sure how to get the census data to generate on the map. I could also do a chloropleth map showing changes in household income over time.
+
+If it would be possible to find real people who had gone through a City of Columbia College years ago, it would be cool to have photos of them in college and them now. I could look through yearbooks to find sources.
+
+## Realistic deadline 
+
+I would likely need two weeks to finish this project in order to analyze my code and have enough time to schedule/conduct interviews.
 
 
-Here's what your newsroom suggested for a project
-My name is Marissa Evans. I'm the investigations editor with the Investigative Project on Race and Equity. We are very excited to have Yasmeen join us this summer at IPRE and hope to help her achieve her goals and report the best stories possible.
-
-
-Here are some potential ideas we'd like Yasmeen to consider during the training. We are excited to see what she might come up with and are of course open to ideas she has coming into the training that she is interested in pursuing. We are interested in ideas related to education (K-12, higher education, trade schools, etc.), housing, healthcare, income inequality, Chicago/Illinois demographic changes and immigration as these are subject matters we're eager to develop coverage opportunities for in the future.
-COMMUNITY COLLEGE TRANSFER CREDITS: We read this Education Writers Association post on community college credit mobility with great interest: https://ewa.org/how-to-cover-the-story/what-is-credit-mobility-and-how-does-it-affect-college-students We think there’s a great potential story here looking at this issue from a racial equity standpoint using public records/data from the City Colleges of Chicago system on how often people of color in community colleges are able to successfully use transfer credits to further their education and the institutions that are willing to take them.
-CHICAGO COMMUNITY COLLEGE ADMISSIONS: We'd like Yasmeen to look into City Colleges of Chicago admissions (acceptance and rejection) by race and zip code to see how this has changed over time.
-CPS BUS ROUTES: We also read an Education Writers Association post about covering present day school segregation: https://ewa.org/educated-reporter/how-school-choice-contributes-to-segregation-in-schools One of the items that stood out is how often school bus routes and transportation issues may inadvertently create segregation issues. There's been ongoing coverage among local newsrooms about Chicago Public Schools' ongoing bus driver shortage and how transportation for kids is not always guaranteed. However, we are curious about a potential story looking into how CPS bus routes have changed over the years and how these route changes may be impacting children of color. We're also curious about a few other things: what is the average wait time for school buses for CPS kids, how late are the buses and which routes have notoriously late ones, on cold winter days how much longer are kids waiting to be picked up for school / get home, how many kids have missed large chunks of time at school because the bus was late, etc. We predict our local newsroom competitors will cover the driver shortage and bus availability again for their back to school coverage in the late summer / early fall but we would like to see if there's a way to elevate the coverage to consider the broader systemic, institutional and structural issues that come with getting Chicago kids to school and back home on time.
-
-
-CHICAGO WEALTH GAPS: We're interested in a potential story looking at how racial wealth gaps across Chicago neighborhoods have changed over time.
-Thanks so much. Please let me know if you or Yasmeen have any questions.
-
-
-This notebook helps you get started.
-
-First option to extract the data:
-Open Adobe Acrobat Pro (the paid version, part of the Creative Cloud)
-Select a specific page with a table you want (I used p 257)
-"Scan & OCR" to Extract Text
-Highlight the table, left click, export to Excel.
-Clean up data
-
-
-# Load software libraries
+### Load software libraries
 ```{r}
 #install.packages("tidyverse")
 #install.packages("janitor")
@@ -60,102 +70,229 @@ library(rvest)
 ```
 
 
-# Load your data
-
-2024
+### Loading data:
 
 ```{r}
+enroll <- read.csv("../data/Fall Enrollment CCC Since 2000 - Sheet1 (1).csv") |>
+  janitor::clean_names()
+```
 
-# 
-# YOUR_DATA <- read.csv("../data/XXXXX.csv") |> 
-#     clean_names()
+### Data analysis:
 
-# data <- read_excel("../data/2024-12-Revenue.xlsx", skip=2) |> 
-#     clean_names()
+Let's first take a look at the breakdown of students by college:
+```{r}
+library(tidyverse)
+library(janitor)
+library(knitr)
 
-degree_by_ethnicity <- read.csv("./data/degree_by_race_ethnicity.csv") |> 
-    clean_names()
+# Fall 2024 breakdown of enrollment by college and ethnicity (wide format)
+fall_2024_breakdown <- enroll |>
+  filter(fall_year == "2024") |>
+  select(
+    college,
+    asian,
+    native_american,
+    african_american_non_latino,
+    latino,
+    white_non_latino,
+    u_s_nonresident,
+    pacific_islander,
+    middle_eastern_or_north_african,
+    two_or_more_races,
+    all_other_or_no_indication,
+    total
+  ) |>
+  mutate(across(
+    .cols = -college,
+    .fns = ~ as.numeric(str_replace_all(as.character(.), ",", ""))
+  )) |>
+  clean_names()
 
+# Show the table
+kable(fall_2024_breakdown, caption = "Fall 2024 Enrollment by College and Ethnicity")
+
+```
+This table shows that for six of the colleges, African American and Latino students have the highest enrollment. The only outlier is Wilbur Wright.
+
+Using this information, we can look at the percentages of Black and Latino students. It would also be interesting to know if this breakdown has always been the case. 
+```{r}
+enroll <- enroll |>
+  mutate(
+    asian = as.numeric(str_replace_all(asian, ",", "")),
+    native_american = as.numeric(str_replace_all(native_american, ",", "")),
+    african_american_non_latino = as.numeric(str_replace_all(african_american_non_latino, ",", "")),
+    latino = as.numeric(str_replace_all(latino, ",", "")),
+    white_non_latino = as.numeric(str_replace_all(white_non_latino, ",", "")),
+    total = as.numeric(str_replace_all(total, ",", "")),
+    asian_pct = (asian / total) * 100,
+    native_american_pct = (native_american / total) * 100,
+    african_american_non_latino_pct = (african_american_non_latino / total) * 100,
+    latino_pct = (latino / total) * 100,
+    white_non_latino_pct = (white_non_latino / total) * 100
+  )
+
+```
+Let's look at how the percentage of Black students in each college has changed since 2014:
+```{r}
+library(tidyverse)
+makeup_black <- enroll |>
+  select(fall_year, college, african_american_non_latino_pct) |>
+  filter(fall_year == "2024" | fall_year == "2014") |>
+  pivot_wider(names_from = fall_year, values_from = african_american_non_latino_pct, id_cols = college) |>
+  janitor::clean_names() |>
+ mutate(x2024 = as.numeric(str_replace_all(x2024, ",", ""))) |> 
+  mutate(x2014 = as.numeric(str_replace_all(x2014, ",", ""))) |> 
+  mutate(difference = (x2024-x2014))
+
+# Show the table
+kable(makeup_black, caption = "Breakdown of Black students in 2014 and 2024 by percentage")
+```
+
+We can take it even further back to look at how the percentage of Black students in each college has changed since 2004:
+```{r}
+library(tidyverse)
+makeup_black_2004 <- enroll |>
+  select(fall_year, college, african_american_non_latino_pct) |>
+  filter(fall_year == "2024" | fall_year == "2004") |>
+  pivot_wider(names_from = fall_year, values_from = african_american_non_latino_pct, id_cols = college) |>
+  janitor::clean_names() |>
+ mutate(x2024 = as.numeric(str_replace_all(x2024, ",", ""))) |> 
+  mutate(x2014 = as.numeric(str_replace_all(x2004, ",", ""))) |> 
+  mutate(difference = (x2024-x2004))
+
+# Show the table
+kable(makeup_black_2004, caption = "Breakdown of Black students in 2004 and 2024 by percentage")
+```
+^I am not sure why the above table also shows a 2014 column with the a copy of the 2004 data.
+
+Now let's look at the change in the percentage of Latinx student since 2004 across each college:
+```{r}
+library(tidyverse)
+makeup_latinx_2004 <- enroll |>
+  select(fall_year, college, latino_pct) |>
+  filter(fall_year == "2024" | fall_year == "2004") |>
+  pivot_wider(names_from = fall_year, values_from = latino_pct, id_cols = college) |>
+  janitor::clean_names() |>
+ mutate(x2024 = as.numeric(str_replace_all(x2024, ",", ""))) |> 
+  mutate(x2004 = as.numeric(str_replace_all(x2004, ",", ""))) |> 
+  mutate(difference = (x2024-x2004))
+
+# Show the table
+kable(makeup_latinx_2004, caption = "Breakdown of Latinx students in 2004 and 2024 by percentage")
+```
+
+The results show that excluding Harry S Truman College, the percentage of Latinx students who make up the student body have increased an average of 19.6% across the other six between 2004 and 2024.
+##### Q: What was the percent change in fall enrollment between 2024 and 2014 for CCC as a whole?
+
+I asked this question because I wanted to know if overall enrollment dropping could be a reason for the large drops in Black student enrollment.
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(janitor)
+library(knitr)
+
+# Black student enrollment change
+black_enrollment_10years <- enroll |>
+  select(fall_year, college, african_american_non_latino) |>
+  filter(fall_year == "2024" | fall_year == "2014") |>
+  pivot_wider(names_from = fall_year, values_from = african_american_non_latino, id_cols = college) |>
+  clean_names() |>
+  mutate(
+    x2024 = as.numeric(str_replace_all(x2024, ",", "")),
+    x2014 = as.numeric(str_replace_all(x2014, ",", "")),
+    pct_change = (x2024 - x2014) / x2014
+  )
+
+# Show the black enrollment table
+kable(black_enrollment_10years, caption = "Change in Black Enrollment by College")
+
+# Overall enrollment change
+enroll1 <- enroll |>
+  select(fall_year, college, total) |>
+  filter(fall_year == "2024" | fall_year == "2014") |>
+  pivot_wider(names_from = fall_year, values_from = total, id_cols = college) |>
+  clean_names() |>
+  mutate(
+    x2024 = as.numeric(str_replace_all(x2024, ",", "")),
+    x2014 = as.numeric(str_replace_all(x2014, ",", "")),
+    pct_change = (x2024 - x2014) / x2014
+  )
+
+# Show the total enrollment table
+kable(enroll1, caption = "Change in Total Enrollment by College")
+```
 
 ```
 
-Data details:
-
-
-# Explore the data types
-```{r}
-
-#glimpse(YOUR_DATA)
-
-glimpse(data)
-
-
-
-
-
-```
-# Percent of whole by race
+#Q: What is the percent change in fall enrollment between 2024 and 2004 for Black students?
+#A: 50.2% decrease for all City Colleges of Chicago
 
 ```{r}
-# 
-# data <- data |> 
-#   #Fix Asian data
-#   
-#   mutate(asian = (as.numeric(asian)),
-#     asian_pct = (asian/total)*100,
-#          black_pct = (black/total)*100,
-#          latinx_pct = (latinx/total)*100,
-#          white_pct = (white/total)*100,
-#          other_pct = (other/total)*100)
+library(tidyverse)
+black_enrollment_20years <- enroll |>
+  select(fall_year, college, african_american_non_latino) |>
+  filter(fall_year == "2024" | fall_year == "2004") |>
+  pivot_wider(names_from = fall_year, values_from = african_american_non_latino, id_cols = college) |>
+  janitor::clean_names() |>
+ mutate(x2024 = as.numeric(str_replace_all(x2024, ",", ""))) |> 
+  mutate(x2004 = as.numeric(str_replace_all(x2004, ",", ""))) |> 
+  mutate(pct_change = (x2024-x2004)/x2004)
+  
+  # Show the total enrollment table
+kable(black_enrollment_20years, caption = "Percent change in fall enrollment between 2024 and 2004 for Black students")
 
 ```
+#Q: What is the percent change in fall enrollment between 2024 and 2014 for Black students?
 ```{r}
-# black <- data %>% 
-#   select(degree_name, details, black, latinx, black_pct, latinx_pct) %>% 
-#   arrange(desc (latinx_pct))
+library(tidyverse)
+black_enrollment_10years <- enroll |>
+  select(fall_year, college, african_american_non_latino) |>
+  filter(fall_year == "2024" | fall_year == "2014") |>
+  pivot_wider(names_from = fall_year, values_from = african_american_non_latino, id_cols = college) |>
+  janitor::clean_names() |>
+ mutate(x2024 = as.numeric(str_replace_all(x2024, ",", ""))) |> 
+  mutate(x2014 = as.numeric(str_replace_all(x2014, ",", ""))) |> 
+  mutate(pct_change = (x2024-x2014)/x2014)
+  
+  # Show the total enrollment table
+kable(black_enrollment_10years, caption = "Percent change in fall enrollment between 2024 and 2014 for Black students")
+
 ```
-
-
-
-
-# Code for later --- Fix dates
+#Q: What is the percent change in fall enrollment between 2024 and 2014 for Latinx students?
+#A: negative 3.3% change
 ```{r}
-# data <- data |> 
-#   mutate(date = lubridate::mdy(contribution_date))
+library(tidyverse)
+latinx_enrollment_10years <- enroll |>
+  select(fall_year, college, latino) |>
+  filter(fall_year == "2024" | fall_year == "2014") |>
+  pivot_wider(names_from = fall_year, values_from = latino, id_cols = college) |>
+  janitor::clean_names() |>
+ mutate(x2024 = as.numeric(str_replace_all(x2024, ",", ""))) |> 
+  mutate(x2014 = as.numeric(str_replace_all(x2014, ",", ""))) |> 
+  mutate(pct_change = (x2024-x2014)/x2014)
+  
+  # Show the total enrollment table
+kable(latinx_enrollment_10years, caption = "Percent change in fall enrollment between 2024 and 2014 for Latinx students")
+
 ```
-
-
-
-# Code for later ---  Data exploration: dates
-
+#Q: What is the percent change in fall enrollment between 2024 and 2004 for Latinx students?
+#A: negative 7.3% change
 ```{r}
-# data |> 
-#    count(date) |> 
-#   arrange(desc(n))
+library(tidyverse)
+latinx_enrollment_20years <- enroll |>
+  select(fall_year, college, latino) |>
+  filter(fall_year == "2024" | fall_year == "2004") |>
+  pivot_wider(names_from = fall_year, values_from = latino, id_cols = college) |>
+  janitor::clean_names() |>
+ mutate(x2024 = as.numeric(str_replace_all(x2024, ",", ""))) |> 
+  mutate(x2004 = as.numeric(str_replace_all(x2004, ",", ""))) |> 
+  mutate(pct_change = (x2024-x2004)/x2004)
+  
+    # Show the total enrollment table
+kable(latinx_enrollment_20years, caption = "Percent change in fall enrollment between 2024 and 2004 for Latinx students")
+
 ```
 
 
-
-
-# Questions 
-
-Write down questions you want answered:
-
-
-
-# Data Details
-https://www.ccc.edu/menu/facts-and-statistics/
-
-I would call the city Colleges people and say you want the data files that underly this report. And ask for prior years, too:
-
-https://www.ccc.edu/wp-content/uploads/CCC-FY23-Statistical-Digest-As-of-March-7-2024.pdf
-
-Second option for extraction:
-
-First, download Tabula, a tool to extract data from PDFs
-https://tabula.technology/
-
-1) Install Tabula and launch it
-2) Download this PDF to your laptop: https://www.ccc.edu/wp-content/uploads/CCC-FY23-Statistical-Digest-As-of-March-7-2024.pdf
-3) I extracted "Degrees by Certificate, Ethnicity" on page 257. Look at the rest and extract other relevant tables later. https://www.youtube.com/watch?v=IEusn9HB1sc
+#rsw comment - add percent of whole graphic here... etc.
 

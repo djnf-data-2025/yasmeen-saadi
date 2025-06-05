@@ -6,8 +6,11 @@ date: "2025-06-02"
 #rsw comments below -
 Yasmeen - This is a very thoughtful proposal with a lot of detail. You have focused it well and spelled out a good plan. The next steps will be to build on this by adding the code to illustrate and expand on the points here. See my examples below. Today we're focused on data visualizations, so you'll be able to add those here.
 
+In the late 1900s, Black enrollment at the City Colleges of Chicago was substantially higher than any other group of race/ethnicity, according to data from the Illinois Community College Board. By the 2000s, enrollment numbers between Black and Hispanic students started to even out.
 
-Using data from the City Colleges of Chicago (CCC) system, I would like to look into how community college enrollment by race/ethnicity has changed over the past 10 years in the city. This could help understand how the accessibility of the colleges for students of color in the area has developed.
+However, in the past 20 years, enrollment for Black students has steadily decreased as Hispanic enrollment has stayed relatively steady.
+
+Using data from the City Colleges of Chicago (CCC) system, I looked into how community college enrollment by race/ethnicity has changed over the past 20 years in the city. This data, along with interviews and historical context, could help us understand how the accessibility/use of these colleges for students of color in the area has developed.
 
 Especially as DEI initiatives and grants for students of color are being threatened, it is timely to take a closer look at the institutions that serve as a more affordable option and if they are truly serving the students who need them.
 
@@ -77,10 +80,13 @@ library(rvest)
 
 # Load your data
 
-
+# Explore the data types
 ```{r}
-degree_by_ethnicity <- read.csv("./data/degree_by_race_ethnicity.csv") |> 
-    clean_names()
+
+#glimpse(YOUR_DATA)
+
+#glimpse(data)
+
 
 ```
 
@@ -90,15 +96,95 @@ Data details:
 
 ```{r}
 # 
-data <- data |>
-  mutate(asian = (as.numeric(asian)),
-    asian_pct = (asian/total)*100,
-         black_pct = (black/total)*100,
-         latinx_pct = (latinx/total)*100,
-         white_pct = (white/total)*100,
-         other_pct = (other/total)*100)
+#data <- data |>
+#  mutate(asian = (as.numeric(asian)),
+#    asian_pct = (asian/total)*100,
+#        black_pct = (black/total)*100,
+#         latinx_pct = (latinx/total)*100,
+#         white_pct = (white/total)*100,
+#         other_pct = (other/total)*100)
 ```
+#Fall enrollment data by race since 2000
+```{r}
+enroll <- read.csv("./data/Fall Enrollment CCC Since 2000 - Sheet1 (1).csv") |>
+  janitor::clean_names()
+```
+#Q: What is the percent change in fall enrollment between 2024 and 2014?
+#A: -25.2% for all City Colleges of Chicago
+```{r}
+library(tidyverse)
+enroll1 <- enroll |>
+  select(fall_year, college, total) |>
+  filter(fall_year == "2024" | fall_year == "2014") |>
+  pivot_wider(names_from = fall_year, values_from = total, id_cols = college) |>
+  janitor::clean_names() |>
+ mutate(x2024 = as.numeric(str_replace_all(x2024, ",", ""))) |> 
+  mutate(x2014 = as.numeric(str_replace_all(x2014, ",", ""))) |> 
+  mutate(pct_change = (x2024-x2014)/x2014)
 
+  
+```
+#Q: What is the percent change in fall enrollment between 2024 and 2004 for Black students?
+#A: -50.2% for all City Colleges of Chicago
+```{r}
+library(tidyverse)
+black_enrollment_20years <- enroll |>
+  select(fall_year, college, african_american_non_latino) |>
+  filter(fall_year == "2024" | fall_year == "2004") |>
+  pivot_wider(names_from = fall_year, values_from = african_american_non_latino, id_cols = college) |>
+  janitor::clean_names() |>
+ mutate(x2024 = as.numeric(str_replace_all(x2024, ",", ""))) |> 
+  mutate(x2004 = as.numeric(str_replace_all(x2004, ",", ""))) |> 
+  mutate(pct_change = (x2024-x2004)/x2004)
+
+```
+#Q: What is the percent change in fall enrollment between 2024 and 2014 for Black students?
+#A: 
+```{r}
+library(tidyverse)
+black_enrollment_10years <- enroll |>
+  select(fall_year, college, african_american_non_latino) |>
+  filter(fall_year == "2024" | fall_year == "2014") |>
+  pivot_wider(names_from = fall_year, values_from = african_american_non_latino, id_cols = college) |>
+  janitor::clean_names() |>
+ mutate(x2024 = as.numeric(str_replace_all(x2024, ",", ""))) |> 
+  mutate(x2014 = as.numeric(str_replace_all(x2014, ",", ""))) |> 
+  mutate(pct_change = (x2024-x2014)/x2014)
+
+```
+#Q: What is the percent change in fall enrollment between 2024 and 2014 for Latinx students?
+#A: -3.3% change
+```{r}
+library(tidyverse)
+latinx_enrollment_10years <- enroll |>
+  select(fall_year, college, latino) |>
+  filter(fall_year == "2024" | fall_year == "2014") |>
+  pivot_wider(names_from = fall_year, values_from = latino, id_cols = college) |>
+  janitor::clean_names() |>
+ mutate(x2024 = as.numeric(str_replace_all(x2024, ",", ""))) |> 
+  mutate(x2014 = as.numeric(str_replace_all(x2014, ",", ""))) |> 
+  mutate(pct_change = (x2024-x2014)/x2014)
+
+```
+#Q: What is the percent change in fall enrollment between 2024 and 2004 for Latinx students?
+#A: -7.3%
+```{r}
+library(tidyverse)
+latinx_enrollment_20years <- enroll |>
+  select(fall_year, college, latino) |>
+  filter(fall_year == "2024" | fall_year == "2004") |>
+  pivot_wider(names_from = fall_year, values_from = latino, id_cols = college) |>
+  janitor::clean_names() |>
+ mutate(x2024 = as.numeric(str_replace_all(x2024, ",", ""))) |> 
+  mutate(x2004 = as.numeric(str_replace_all(x2004, ",", ""))) |> 
+  mutate(pct_change = (x2024-x2004)/x2004)
+
+```
+#Q: How has the makeup of 
+#A: -7.3%
+
+<iframe title="Black student enrollment in City Colleges of Chicago drops as Latinx student enrollment stays steady " aria-label="Interactive line chart" id="datawrapper-chart-iHTUw" src="https://datawrapper.dwcdn.net/iHTUw/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}}))}();
+</script>
 
 #rsw comment - add percent of whokle graphic here... etc.
 
