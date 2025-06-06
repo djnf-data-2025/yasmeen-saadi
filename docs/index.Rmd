@@ -7,11 +7,21 @@ date: "2025-06-04"
 <iframe title="City Colleges of Chicago" aria-label="Locator map" id="datawrapper-chart-3LN2l" src="https://datawrapper.dwcdn.net/3LN2l/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="563" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}}))}();
 </script>
 
-In the late 1900s, Black enrollment at the City Colleges of Chicago was substantially higher than any other group of race/ethnicity, according to data from the Illinois Community College Board. By the 2000s, enrollment numbers between Black and Hispanic students started to even out.
+Excluding a recent rise in overall enrollment after the COVID-19 pandemic — in the past 15 years, enrollment for Black students has steadily decreased as Hispanic enrollment has stayed relatively steady. This has resulted in a student body with a heavier Hispanic/Latinx presence.
 
-However — excluding a recent rise after the COVID-19 pandemic — in the past 15 years, enrollment for Black students has steadily decreased as Hispanic enrollment has stayed relatively steady. This has resulted in a student body with a heavier Hispanic/Latinx presence.
+In the 1980s, Black enrollment at the City Colleges of Chicago was substantially higher than any other group of race/ethnicity, according to data from the Illinois Community College Board. By the late 1990s/early 2000s, enrollment numbers between Black and Hispanic students started to even out. 2012 was the crossing point. After 2012, Black enrollment declined lower than than the Hispanic enrollment.
 
-Using data from the City Colleges of Chicago (CCC) system, I looked into how community college enrollment by race/ethnicity has changed over the past 20 years in the city. This data, along with interviews and historical context, can help us understand how the accessibility/use of these colleges for students of color in the area has developed.
+Combining this data with interviews and historical context can help us understand how the accessibility/use of these colleges for students of color in the area has developed.
+
+<iframe title="Fall enrollment across City Colleges of Chicago for Black and Hispanic students" aria-label="Grouped Columns" id="datawrapper-chart-xxniH" src="https://datawrapper.dwcdn.net/xxniH/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="517" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}}))}();
+</script>
+
+<iframe title="Changes in Black student enrollment compared to college totals" aria-label="Grouped Columns" id="datawrapper-chart-Zp5aq" src="https://datawrapper.dwcdn.net/Zp5aq/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="473" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}}))}();
+</script>
+
+ADD ACADEMIC CONTEXT ABOUT THE POSITION OF COMMUNITY COLLEGES — STUDY
+
+Study by ____ looking at community colleges as racialized institutions. most accessible postsecondary pathway for minoritized students is also the most chronically under-resourced sector of higher education in the United States.
 
 Especially as DEI initiatives and grants for students of color are being threatened, it is timely to take a closer look at the institutions that serve as a more affordable option and if they are truly serving the students who need them. We can also compare CCC's growth with the population growth of the city to see if the two align. If not, we would need to dig in to learn how come.
 
@@ -36,6 +46,10 @@ College Scorecard also provides snapshots on each community college, including g
 
 - Lorenzo Baber is the director of UIUC's Office of Community College Research and Leadership. He or someone on the research team could provide insight on persisting equity issues within community colleges.
 
+Report on racially equitable practices on community colleges: nearly half of all students of color enrolled in U.S. postsecondary education attend a community college (American Association of Community Colleges, 2022; Long, 2016), decades of research suggest that the egalitarian principles of community colleges do not necessarily translate to racially equitable student experiences or outcomes 
+
+minoritized students disproportionately attend community colleges, therefore they are critical sites for intervening in racial inequity
+
 - In April, Chicago Public Schools, CCC and the University of Illinois Chicago launched “Chicago Roadmap 2.0,” which will try to create a pipeline for students seeking higher education. The website does not include the directors of the project, but I could reach out to the general email to have someone on the project speak about the local need for students in the city.
 
 - A researcher/historian at the Abakanowicz Research Center within the Chicago History Museum could provide context on the demographic development of the city and the rise in Latinx population.
@@ -51,6 +65,17 @@ If it would be possible to find real people who had gone through a City of Colum
 ## Realistic deadline 
 
 I would likely need two weeks to finish this project in order to analyze my code and have enough time to schedule/conduct interviews.
+
+## Out migration of Black families? The rise of other institutions?
+
+Looking at CPS enrollment — https://kidsfirstchicago.org/publications/enrollment-crisis
+
+Correlation to Chicago Public Schools — Not only have Black students recorded the largest year-over-year decrease in enrollment but also the largest decrease since 2014. There are 44,680 fewer Black students enrolled in CPS this year than 10 years prior. That marks a decline of 29% during 10 years. — https://www.illinoispolicy.org/chicago-public-schools-sees-uptick-in-enrollment-but-still-lower-than-10-years-ago/
+
+
+Increases in Hispanic enrollment and population growth — impacting community colleges and K-12 public schools — do we have the English learning resources to support this growth? — https://wgntv.com/migrants-in-chicago/chicago-public-school-teachers-allegedly-told-to-pass-migrant-students-regardless-of-grades-report/
+
+
 
 
 ### Load software libraries
