@@ -1,7 +1,7 @@
 ---
-title: "How City Colleges of Chicago fall enrollment has changed since 2000 — Yasmeen Saadi"
+title: "How City Colleges of Chicago fall enrollment has changed since 2000"
 output: html_document
-date: "2025-06-04"
+date: "2025-06-04 — Yasmeen Saadi"
 ---
 
 <iframe title="City Colleges of Chicago" aria-label="Locator map" id="datawrapper-chart-3LN2l" src="https://datawrapper.dwcdn.net/3LN2l/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="563" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}}))}();
@@ -11,7 +11,7 @@ Excluding a recent rise in overall enrollment after the COVID-19 pandemic — in
 
 In the 1980s, Black enrollment at the City Colleges of Chicago was substantially higher than any other group of race/ethnicity, according to data from the Illinois Community College Board. By the late 1990s/early 2000s, enrollment numbers between Black and Hispanic students started to even out. 2012 was the crossing point. After 2012, Black enrollment declined lower than than the Hispanic enrollment.
 
-The decline in Black enrollment paralleled the decline in total enrollment at CCC, which could be caused by several factors — changes in city demographic makeup, the development of more colleges/higher education options, etc.
+The decline in Black enrollment reflected the decline in total enrollment at CCC, which could be caused by several factors — changes in city demographic makeup, the development of more colleges/higher education options, etc. However, as the data shows later, the percent change in Black enrollment has higher than the total percent change, meaning Black enrollment declined at a steeper rate.
 
 Combining this data with interviews and historical context can help us understand how the accessibility/use of these colleges for students of color in the area has developed.
 
@@ -23,7 +23,7 @@ Combining this data with interviews and historical context can help us understan
 
 Looking into this shift in community college enrollment is important because of the disproportionately high percentages of minority students who attend them. According to a 2022 study by the American Association of Community Colleges, nearly half of all U.S. students of color who were enrolled in postsecondary education attended a community college. 
 
-Especially as DEI initiatives and grants for students of color are being threatened, it is timely to take a closer look at the institutions that serve as a more affordable option and if they are truly serving the students who need them. A study by UIUC's Office of Community College Research and Leadership found that although community colleges are often the most accessible postsecondary path for minority students, it is also one of the most chronically under-resourced sector of higher education in the U.S. It would be interesting to explore this lack of resources further by looking at teacher qualifications, student to teacher ratios and retention/graduation rates.
+Especially as DEI initiatives and grants for students of color are being threatened, it is timely to take a closer look at the institutions that serve as a more affordable option and if they are truly serving the students who need them. A study by UIUC's Office of Community College Research and Leadership found that although community colleges are often the most accessible postsecondary path for minority students, it is also one of the most chronically under-resourced sector of higher education in the U.S. It would be interesting to explore this lack of resources further by looking at funding, teacher qualifications, student to teacher ratios and retention/graduation rates.
 
 In each of CCC's seven colleges, students of color make up over 60% of the student enrollment. By compiling the data from the past 20 years, we can see if the percentages of Black and Latinx students have always been high or if they have increased over the years. The Investigative Project on Race and Equity was originally interested in looking at acceptances and rejections across zip codes. However, all seven colleges are open enrollment, meaning anyone who applies is awarded admission.
 
@@ -70,7 +70,7 @@ If it would be possible to find real people who had gone through a City of Colum
 
 ## Realistic deadline 
 
-I would likely need two weeks to finish this project in order to analyze my code and have enough time to schedule/conduct interviews.
+I would likely need three weeks to finish this project in order to analyze my code and have enough time to schedule/conduct interviews.
 
 ## Other threads to follow
 
@@ -86,7 +86,7 @@ Another thread that would be interesting to follow is if community colleges have
 #install.packages("rvest")
 ```
 
-```{r}
+```{r, echo = FALSE}
 library(tidyverse)
 library(janitor)
 library(readxl)
@@ -127,6 +127,10 @@ fall_2024_breakdown <- enroll |>
     all_other_or_no_indication,
     total
   ) |>
+  rename(
+    african_american = african_american_non_latino,
+    mid_east_african = middle_eastern_or_north_african
+  ) |>
   mutate(across(
     .cols = -college,
     .fns = ~ as.numeric(str_replace_all(as.character(.), ",", ""))
@@ -157,61 +161,48 @@ enroll <- enroll |>
   )
 
 ```
-#cut Let's look at how the percentage of Black students in each college has changed since 2014:
-```{r}
-#library(tidyverse)
-#makeup_black <- enroll |>
-#  select(fall_year, college, african_american_non_latino_pct) |>
-#  filter(fall_year == "2024" | fall_year == "2014") |>
-#  pivot_wider(names_from = fall_year, values_from = african_american_non_latino_pct, id_cols = college) |>
-#  janitor::clean_names() |>
-# mutate(x2024 = as.numeric(str_replace_all(x2024, ",", ""))) |> 
-#  mutate(x2014 = as.numeric(str_replace_all(x2014, ",", ""))) |> 
-#  mutate(difference = (x2024-x2014))
-
-# Show the table
-#kable(makeup_black, caption = "Breakdown of Black students in 2014 and 2024 by percentage")
-```
-
-We can take it even further back to look at how the percentage of Black students in each college has changed since 2004:
-```{r}
-#library(tidyverse)
-#makeup_black_2004 <- enroll |>
-#  select(fall_year, college, african_american_non_latino_pct) |>
-#  filter(fall_year == "2024" | fall_year == "2004") |>
-#  pivot_wider(names_from = fall_year, values_from = african_american_non_latino_pct, id_cols = college) |>
-#  janitor::clean_names() |>
-# mutate(x2024 = as.numeric(str_replace_all(x2024, ",", ""))) |> 
-#  mutate(x2014 = as.numeric(str_replace_all(x2004, ",", ""))) |> 
-#  mutate(difference = (x2024-x2004))
-
-# Show the table
-#kable(makeup_black_2004, caption = "Breakdown of Black students in 2004 and 2024 by percentage")
-```
-^I am not sure why the above table also shows a 2014 column with the a copy of the 2004 data.
-
-Now let's look at the change in the percentage of Latinx student since 2004 across each college:
+Let's look at how the percentage of Black students in each college has changed since 2014:
 ```{r}
 library(tidyverse)
-makeup_latinx_2004 <- enroll |>
-  select(fall_year, college, latino_pct) |>
-  filter(fall_year == "2024" | fall_year == "2004") |>
-  pivot_wider(names_from = fall_year, values_from = latino_pct, id_cols = college) |>
-  janitor::clean_names() |>
- mutate(x2024 = as.numeric(str_replace_all(x2024, ",", ""))) |> 
-  mutate(x2004 = as.numeric(str_replace_all(x2004, ",", ""))) |> 
-  mutate(difference = (x2024-x2004))
+library(janitor)
+library(knitr)
 
-# Show the table
-kable(makeup_latinx_2004, caption = "Breakdown of Latinx students in 2004 and 2024 by percentage")
+makeup_black <- enroll |>
+  select(fall_year, college, african_american_non_latino_pct) |>
+  filter(fall_year == "2024" | fall_year == "2014") |>
+  pivot_wider(names_from = fall_year, values_from = african_american_non_latino_pct, id_cols = college) |>
+  clean_names() |>
+  mutate(
+    x2024 = round(as.numeric(str_replace_all(x2024, ",", "")), 2),
+    x2014 = round(as.numeric(str_replace_all(x2014, ",", "")), 2)
+  )
+
+ #Show the table
+kable(makeup_black, caption = "Breakdown of Black students in 2014 and 2024 by percentage")
 ```
 
-The results show that excluding Harry S Truman College, the percentage of Latinx students who make up the student body have increased an average of 19.6% across the other six between 2004 and 2024.
-##### Q: What was the percent change in fall enrollment between 2024 and 2014 for CCC as a whole?
+Now let's look at the change in the percentage of Latinx student since 2014 across each college:
+```{r}
+library(tidyverse)
+makeup_latinx_2014 <- enroll |>
+  select(fall_year, college, latino_pct) |>
+  filter(fall_year == "2024" | fall_year == "2014") |>
+  pivot_wider(names_from = fall_year, values_from = latino_pct, id_cols = college) |>
+  janitor::clean_names() |>
+mutate(
+    x2024 = round(as.numeric(str_replace_all(x2024, ",", "")), 2),
+    x2014 = round(as.numeric(str_replace_all(x2014, ",", "")), 2)
+  )
 
-I asked this question because I wanted to know if overall enrollment dropping could be a reason for the large drops in Black student enrollment.
+# Show the table
+kable(makeup_latinx_2014, caption = "Breakdown of Latinx students in 2014 and 2024 by percentage")
+```
 
-```{r echo=TRUE, message=FALSE, warning=FALSE}
+The results show that excluding the percentage of Latinx students who make up the student body have increased substantially across all colleges. Latinx students account for more than half of the student body in three out of the seven schools.
+
+#### Q: What was the percent change in fall enrollment between 2024 and 2014 for CCC as a whole?
+
+```{r}
 library(tidyverse)
 library(janitor)
 library(knitr)
@@ -225,8 +216,9 @@ black_enrollment_10years <- enroll |>
   mutate(
     x2024 = as.numeric(str_replace_all(x2024, ",", "")),
     x2014 = as.numeric(str_replace_all(x2014, ",", "")),
-    pct_change = (x2024 - x2014) / x2014
-  )
+    pct_change = ((x2024 - x2014) / x2014)*100
+  )|>
+  arrange(desc(pct_change))
 
 # Show the black enrollment table
 kable(black_enrollment_10years, caption = "Change in Black Enrollment by College")
@@ -240,78 +232,83 @@ enroll1 <- enroll |>
   mutate(
     x2024 = as.numeric(str_replace_all(x2024, ",", "")),
     x2014 = as.numeric(str_replace_all(x2014, ",", "")),
-    pct_change = (x2024 - x2014) / x2014
-  )
+    pct_change = ((x2024 - x2014) / x2014)*100
+  )|>
+  arrange(desc(pct_change))
 
 # Show the total enrollment table
 kable(enroll1, caption = "Change in Total Enrollment by College")
 ```
 
 ```
+Comparing the percent change between Black students and total students, we can see that Black student enrollment declined more steeply than total enrollment.
 
-#Q: What is the percent change in fall enrollment between 2024 and 2004 for Black students?
-#A: 50.2% decrease for all City Colleges of Chicago
+#### Q: What is the percent change in fall enrollment between 2024 and 2004 for Black students?
 
-```{r}
+
+```{r, echo=FALSE}
 library(tidyverse)
+library(janitor)
+library(knitr)
+
 black_enrollment_20years <- enroll |>
   select(fall_year, college, african_american_non_latino) |>
   filter(fall_year == "2024" | fall_year == "2004") |>
   pivot_wider(names_from = fall_year, values_from = african_american_non_latino, id_cols = college) |>
-  janitor::clean_names() |>
- mutate(x2024 = as.numeric(str_replace_all(x2024, ",", ""))) |> 
-  mutate(x2004 = as.numeric(str_replace_all(x2004, ",", ""))) |> 
-  mutate(pct_change = (x2024-x2004)/x2004)
+  clean_names() |>
+  mutate(
+    x2024 = as.numeric(str_replace_all(x2024, ",", "")),
+    x2004 = as.numeric(str_replace_all(x2004, ",", "")),
+    pct_change = round(((x2024 - x2004) / x2004) * 100, 2)
+  )|>
+  arrange(desc(pct_change))
+
   
   # Show the total enrollment table
 kable(black_enrollment_20years, caption = "Percent change in fall enrollment between 2024 and 2004 for Black students")
 
 ```
-#Q: What is the percent change in fall enrollment between 2024 and 2014 for Black students?
-```{r}
-library(tidyverse)
-black_enrollment_10years <- enroll |>
-  select(fall_year, college, african_american_non_latino) |>
-  filter(fall_year == "2024" | fall_year == "2014") |>
-  pivot_wider(names_from = fall_year, values_from = african_american_non_latino, id_cols = college) |>
-  janitor::clean_names() |>
- mutate(x2024 = as.numeric(str_replace_all(x2024, ",", ""))) |> 
-  mutate(x2014 = as.numeric(str_replace_all(x2014, ",", ""))) |> 
-  mutate(pct_change = (x2024-x2014)/x2014)
-  
-  # Show the total enrollment table
-kable(black_enrollment_10years, caption = "Percent change in fall enrollment between 2024 and 2014 for Black students")
 
-```
-#Q: What is the percent change in fall enrollment between 2024 and 2014 for Latinx students?
-#A: negative 3.3% change
-```{r}
+#### Q: What is the percent change in fall enrollment between 2024 and 2014 for Latinx students?
+```{r, echo = FALSE}
 library(tidyverse)
+library(janitor)
+library(knitr)
+
 latinx_enrollment_10years <- enroll |>
   select(fall_year, college, latino) |>
   filter(fall_year == "2024" | fall_year == "2014") |>
   pivot_wider(names_from = fall_year, values_from = latino, id_cols = college) |>
-  janitor::clean_names() |>
- mutate(x2024 = as.numeric(str_replace_all(x2024, ",", ""))) |> 
-  mutate(x2014 = as.numeric(str_replace_all(x2014, ",", ""))) |> 
-  mutate(pct_change = (x2024-x2014)/x2014)
+  clean_names() |>
+  mutate(
+    x2024 = as.numeric(str_replace_all(x2024, ",", "")),
+    x2014 = as.numeric(str_replace_all(x2014, ",", "")),
+    pct_change = round(((x2024 - x2014) / x2014) * 100, 2)
+  )|>
+  arrange(desc(pct_change))
   
   # Show the total enrollment table
 kable(latinx_enrollment_10years, caption = "Percent change in fall enrollment between 2024 and 2014 for Latinx students")
 
 ```
-#Q: What is the percent change in fall enrollment between 2024 and 2004 for Latinx students?
-#A: negative 7.3% change
-```{r}
+#### Q: What is the percent change in fall enrollment between 2024 and 2004 for Latinx students?
+```{r, echo = FALSE}
+
 library(tidyverse)
+library(janitor)
+library(knitr)
+
 latinx_enrollment_20years <- enroll |>
   select(fall_year, college, latino) |>
   filter(fall_year == "2024" | fall_year == "2004") |>
   pivot_wider(names_from = fall_year, values_from = latino, id_cols = college) |>
-  janitor::clean_names() |>
- mutate(x2024 = as.numeric(str_replace_all(x2024, ",", ""))) |> 
-  mutate(x2004 = as.numeric(str_replace_all(x2004, ",", ""))) |> 
-  mutate(pct_change = (x2024-x2004)/x2004)
+  clean_names() |>
+  mutate(
+    x2024 = as.numeric(str_replace_all(x2024, ",", "")),
+    x2004 = as.numeric(str_replace_all(x2004, ",", "")),
+    pct_change = round(((x2024 - x2004) / x2004) * 100, 2)
+  )|>
+  arrange(desc(pct_change))
   
     # Show the total enrollment table
 kable(latinx_enrollment_20years, caption = "Percent change in fall enrollment between 2024 and 2004 for Latinx students")
